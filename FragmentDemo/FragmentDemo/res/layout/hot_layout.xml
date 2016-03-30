@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/raido_menu"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/tab_bg"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_selector_xiaoxi"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:checked="true"
+            android:text="消息"
+            android:textColor="@color/tab_selector_tv_color" />
+
+        <RadioButton
+            android:id="@+id/contact"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_selector_lianxiren"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="联系人"
+            android:textColor="@color/tab_selector_tv_color" />
+
+        <RadioButton
+            android:id="@+id/news"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_selector_dongtai"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="动态"
+            android:textColor="@color/tab_selector_tv_color" />
+
+        <RadioButton
+            android:id="@+id/setting"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_selector_shezhi"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="设置"
+            android:textColor="@color/tab_selector_tv_color" />
+    </RadioGroup>
+     <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+</LinearLayout>
