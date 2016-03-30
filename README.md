@@ -1,1 +1,3 @@
 # MyFirstGit
+一个Fragment做导航栏的demo
+其中嵌套了ViewPager，然后Viewpager中又使用了fragment
